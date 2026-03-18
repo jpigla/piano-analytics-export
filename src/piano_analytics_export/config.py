@@ -27,7 +27,7 @@ def init_config(path: Path) -> None:
         raise SystemExit(f"Config-Datei existiert bereits: {path}")
     path.write_text(json.dumps(EXAMPLE_CONFIG, indent=2, ensure_ascii=False) + "\n")
     print(f"Config-Vorlage erstellt: {path}")
-    print("Bitte API-Keys und Beschreibungen anpassen, dann erneut ausfuehren.")
+    print("Bitte API-Keys und Beschreibungen anpassen, dann erneut ausführen.")
 
 
 def load_config(path: Path) -> list[dict[str, Any]]:

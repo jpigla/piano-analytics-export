@@ -18,7 +18,27 @@ pip install .
 pip install git+https://github.com/jpigla/piano-analytics-export.git
 ```
 
-### Weg 3: Wheel-Datei
+### Weg 3: pipx (isolierte Installation)
+
+[pipx](https://pipx.pypa.io/) installiert das Tool in einer eigenen virtuellen Umgebung, ohne die systemweite Python-Installation zu verändern.
+
+pipx installieren (falls noch nicht vorhanden):
+```sh
+# macOS
+brew install pipx
+pipx ensurepath
+
+# Linux / Windows
+pip install --user pipx
+pipx ensurepath
+```
+
+Dann das Tool installieren:
+```sh
+pipx install git+https://github.com/jpigla/piano-analytics-export.git
+```
+
+### Weg 4: Wheel-Datei
 
 Wheel bauen und verschicken:
 ```sh

@@ -139,7 +139,7 @@ def main() -> None:
     if not results:
         if not args.dry_run and failed_entries:
             failed_list = ", ".join(sorted(set(failed_entries)))
-            raise SystemExit(f"Abbruch: Die folgenden Eintraege konnten nicht abgerufen werden: {failed_list}")
+            raise SystemExit(f"Abbruch: Die folgenden Einträge konnten nicht abgerufen werden: {failed_list}")
         if not args.dry_run:
             print_table_row("INFO", "-", start_date, end_date, "No data fetched")
         return
@@ -162,7 +162,7 @@ def main() -> None:
 
     if failed_entries:
         failed_list = ", ".join(sorted(set(failed_entries)))
-        raise SystemExit(f"Abbruch: Die folgenden Eintraege konnten nicht abgerufen werden: {failed_list}")
+        raise SystemExit(f"Abbruch: Die folgenden Einträge konnten nicht abgerufen werden: {failed_list}")
 
 
 if __name__ == "__main__":
