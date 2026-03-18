@@ -134,3 +134,7 @@ piano-analytics-export --start 2025-01-01 --end 2025-01-31 --output ergebnisse/e
 ## Parallelisierung
 
 Mehrere API-Keys werden standardmäßig mit bis zu 5 parallelen Threads abgefragt. Anpassbar mit `--max-workers`.
+
+## Lizenz
+
+MIT — siehe [LICENSE](LICENSE).
